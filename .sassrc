@@ -1,0 +1,5 @@
+{
+  "includePaths": ["assets/sass"],
+  "outputStyle": "expanded",
+  "sourceMap": true
+}

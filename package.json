@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "- Based on the *Strata* template from HTML5 UP (https://html5up.net/)     - Original content has a CCA 3.0 License -",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass assets/sass/main.scss:assets/css/main.css",
+    "sass:watch": "sass --watch assets/sass/main.scss:assets/css/main.css",
+    "build": "sass assets/sass/main.scss:assets/css/main.css --style compressed",
+    "serve": "browser-sync start --server --files 'assets/css/*.css, *.html'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicholasNelsonwood/NicholasNelsonwood.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicholasNelsonwood/NicholasNelsonwood.github.io/issues"
+  },
+  "homepage": "https://github.com/NicholasNelsonwood/NicholasNelsonwood.github.io#readme",
+  "devDependencies": {
+    "sass": "^1.86.0"
+  }
+}
