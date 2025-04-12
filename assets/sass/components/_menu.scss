@@ -8,23 +8,16 @@
     top: 20px;
     left: 20px;
     z-index: 100;
-    background-color: rgba(_palette(accent1, bg), 0.8);
-    color: _palette(accent1, fg);
+    background-color: transparent; // Removed background
     border: none;
-    border-radius: 4px;
     padding: 10px;
     cursor: pointer;
-    display: none; // Hidden on desktop, visible on mobile
-
-    @media screen and (max-width: 980px) {
-        display: block;
-    }
-
+    display: block; // Always visible, not just on mobile
     span {
         display: block;
         width: 25px;
         height: 3px;
-        background-color: _palette(accent1, fg);
+        background-color: _palette(fg); // Changed to use the default foreground color
         margin: 5px 0;
         transition: 0.3s;
     }
@@ -37,15 +30,13 @@
     left: -300px;
     width: 300px;
     height: 100%;
-    background-color: rgba(_palette(accent1, bg), 0.9);
+    background-color: rgba(_palette(accent2, bg), 0.85);
     z-index: 99;
     padding: 4em 2em;
     transition: left 0.3s ease;
-
     &.active {
         left: 0;
     }
-
     a {
         display: block;
         color: _palette(accent1, fg);
@@ -53,7 +44,6 @@
         padding: 10px 0;
         font-size: 1.1em;
         transition: color 0.3s ease;
-
         &:hover {
             color: _palette(accent2, bg);
         }

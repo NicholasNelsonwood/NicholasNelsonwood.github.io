@@ -6,24 +6,17 @@
   top: 20px;
   left: 20px;
   z-index: 100;
-  background-color: rgba(73, 191, 157, 0.8);
-  color: rgb(209.5, 239, 230.5);
+  background-color: transparent;
   border: none;
-  border-radius: 4px;
   padding: 10px;
   cursor: pointer;
-  display: none;
-}
-@media screen and (max-width: 980px) {
-  .menu-button {
-    display: block;
-  }
+  display: block;
 }
 .menu-button span {
   display: block;
   width: 25px;
   height: 3px;
-  background-color: rgb(209.5, 239, 230.5);
+  background-color: #a2a2a2;
   margin: 5px 0;
   transition: 0.3s;
 }
@@ -35,7 +28,7 @@
   left: -300px;
   width: 300px;
   height: 100%;
-  background-color: rgba(73, 191, 157, 0.9);
+  background-color: rgba(31, 24, 21, 0.85);
   z-index: 99;
   padding: 4em 2em;
   transition: left 0.3s ease;
